@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Resistor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Resistor</h1>
+        <label for="band1">Pilih Warna Pita 1:</label>
+        <select id="band1">
+            <option value="" disabled selected>-- Pilih Warna --</option>
+        </select>
+
+        <label for="band2">Pilih Warna Pita 2:</label>
+        <select id="band2">
+            <option value="" disabled selected>-- Pilih Warna --</option>
+        </select>
+
+        <label for="multiplier">Pilih Warna Pita 3 (Multiplier):</label>
+        <select id="multiplier">
+            <option value="" disabled selected>-- Pilih Warna --</option>
+        </select>
+
+        <button onclick="calculateResistance()">Hitung Nilai Resistor</button>
+        
+        <h2>Hasil: <span id="result">0 Ω</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
